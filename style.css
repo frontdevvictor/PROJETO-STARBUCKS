@@ -1,13 +1,14 @@
-body{
+body {
     margin: 0px;
-    font-family:"SoDo Sans SemiBold" Helvetica Neue, Helvetica, Arial,
-    sans-serif ;
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
 .navbar-container {
     box-shadow: 0px 4px 5px 0px rgba(191, 122, 122, 0.71);
     -webkit-box-shadow: 0px 4px 5px 0px rgba(191, 122, 122, 0.71);
     -moz-box-shadow: 0px 4px 5px 0px rgba(191, 122, 122, 0.71);
 }
+
 .navbar {
     max-width: 1560px;
     padding: 20px;
@@ -24,23 +25,23 @@ body{
 }
 
 .navbar-left div {
-        text-transform: uppercase;
-        font-weight: 600;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .navbar-left div:hover,
-.find-a-store:hover{
+.find-a-store:hover {
     color: #00754a;
 }
 
 .navbar-left,
-.navbar-rigth{
+.navbar-right {  /* Corrected typo */
     display: flex;
     align-items: center;
 }
 
 .navbar-left > *,
-.navbar-rigth > * {
+.navbar-right > * {
     margin: 10px;
 }
 
@@ -51,7 +52,7 @@ body{
 }
 
 .sign-in,
-.join-now{
+.join-now {
     font-weight: 500;
     border: 1px solid black;
     border-radius: 40px;
@@ -63,7 +64,7 @@ body{
     color: white;
 }
 
--join-now:hover{
+.join-now:hover {  /* Fixed typo */
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -75,14 +76,16 @@ body{
     max-width: 1440px;
     margin: auto;
 }
-.product img{
+
+.product img {
     max-width: 100%;
     object-fit: contain;
     height: 100%;
 }
 
-.product{
+.product {
     display: flex;
+    flex-direction: row; /* Ensuring horizontal layout */
 }
 
 .product-left,
@@ -102,8 +105,9 @@ body{
     text-align: center;
     color: white;
 }
+
 .product-container {
-    margin: 40px 0px 40px 0px;
+    margin: 40px 0px;
     display: flex;
 }
 
@@ -117,18 +121,18 @@ body{
     margin-bottom: 30px;
 }
 
-.product-button-white{
+.product-button-white {
     color: white;
 }
 
-.product-button-black{
+.product-button-black {
     color: black;
     border-color: black;
 }
 
 .product-description {
     text-align: center;
-    padding: 30px 60px 30px 60px;
+    padding: 30px 60px;
     font-size: 18px;
 }
 
